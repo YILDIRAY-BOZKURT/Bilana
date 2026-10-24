@@ -1,0 +1,53 @@
+:root {
+  --bg: #f3f6f4; --surface: #ffffff; --line: #e4ebe7;
+  --ink: #0e1a14; --ink-soft: #55655d; --ink-muted: #8a9890;
+  --brand: #0a5c3e; --brand-soft: #eaf7f0;
+  --gradient: linear-gradient(135deg, #0f7a54, #08493a);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+}
+header { background: var(--gradient); color: #fff; padding: 40px 20px 72px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand img { width: 56px; height: 56px; border-radius: 14px; }
+.brand span { font-weight: 800; letter-spacing: .12em; font-size: 14px; opacity: .8; }
+h1 { font-size: 34px; line-height: 1.15; margin: 22px 0 6px; text-wrap: balance; }
+header p { margin: 0; color: rgba(255, 255, 255, .9); }
+nav { margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+nav a {
+  color: #fff; text-decoration: none; font-weight: 700; font-size: 15px;
+  padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.25);
+}
+main { padding: 0 16px 48px; margin-top: -40px; }
+article {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 28px;
+  padding: 28px 24px; margin-bottom: 20px;
+}
+article > h2:first-child { margin-top: 0; font-size: 26px; }
+h3 { font-size: 19px; margin: 26px 0 6px; }
+p, li { color: var(--ink-soft); }
+p { margin: 0 0 10px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.summary { background: var(--brand-soft); border-radius: 20px; padding: 16px 20px; margin: 16px 0; }
+.summary ul { margin: 0; }
+.summary li { color: var(--brand); font-weight: 600; }
+.contact {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+  background: var(--brand-soft); border-radius: 20px; padding: 16px 20px; margin: 16px 0 8px;
+}
+.contact strong { color: var(--brand); }
+.contact a { color: var(--brand); font-weight: 800; font-size: 19px; word-break: break-all; }
+.choices { display: grid; gap: 14px; }
+.choice {
+  display: block; text-decoration: none; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 24px; padding: 20px 22px; color: var(--ink);
+}
+.choice strong { display: block; font-size: 21px; }
+.choice span { color: var(--ink-soft); }
+a { color: #12805a; }
+footer { text-align: center; color: var(--ink-muted); font-size: 14px; padding-bottom: 32px; }
