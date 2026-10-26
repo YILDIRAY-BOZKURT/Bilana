@@ -1,5 +1,5 @@
 {
   "ios": { "minBuild": 2, "latestBuild": 0 },
   "android": { "minBuild": 0, "latestBuild": 0 },
-  "announcement": "Merhaba. Bilana 1 ay sonra abonelik sistemine geçecektir.""
+  "announcement": { "id": "premium-2026-12", "title": "Bilana Hakkında", "body": "Bilana 1 ay sonra abonelik sistemine geçecektir." }
 }
